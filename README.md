@@ -13,7 +13,7 @@ This Git hook system renames remote branches to randomized names while retaining
 1. Clone or navigate to your Git repository where you want to set up this hook.
 2. Save the Hooks:
 
-* Create a file named post-fetch in the `.git/hooks/` directory and paste the following script:
+* Create a file named `post-fetch` in the `.git/hooks/` directory and paste the following script:
 
 ```
 #!/bin/bash
@@ -65,7 +65,7 @@ done
 git checkout main 2>/dev/null || git checkout master
 ```
 
-* Create a file named pre-push in the .git/hooks/ directory and paste the following script:
+* Create a file named `pre-push` in the .git/hooks/ directory and paste the following script:
 
 ```
 #!/bin/bash
